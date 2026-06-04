@@ -1,0 +1,164 @@
+{
+  "buildings": [
+    {
+      "id": "main_hall",
+      "name": "大殿",
+      "tier": "basic",
+      "description": "宗门核心，决定宗门等级与弟子上限",
+      "unlock": null,
+      "max_level": 10,
+      "levels": [
+        { "level": 1, "lingstone": 0, "materials": {}, "time_sec": 0, "effect": { "clan_level": 1, "disciple_max": 5 } },
+        { "level": 2, "lingstone": 200, "materials": {}, "time_sec": 30, "effect": { "clan_level": 2, "disciple_max": 8 } },
+        { "level": 3, "lingstone": 500, "materials": { "矿石": 5 }, "time_sec": 60, "effect": { "clan_level": 3, "disciple_max": 12 } },
+        { "level": 4, "lingstone": 1200, "materials": { "矿石": 10, "灵草": 5 }, "time_sec": 120, "effect": { "clan_level": 4, "disciple_max": 16 } },
+        { "level": 5, "lingstone": 3000, "materials": { "矿石": 20, "灵草": 10 }, "time_sec": 300, "effect": { "clan_level": 5, "disciple_max": 20 } },
+        { "level": 6, "lingstone": 8000, "materials": { "矿石": 40, "灵草": 20 }, "time_sec": 600, "effect": { "clan_level": 6, "disciple_max": 25 } },
+        { "level": 7, "lingstone": 20000, "materials": { "矿石": 80, "灵草": 40 }, "time_sec": 1200, "effect": { "clan_level": 7, "disciple_max": 30 } },
+        { "level": 8, "lingstone": 50000, "materials": { "矿石": 150, "灵草": 80 }, "time_sec": 2400, "effect": { "clan_level": 8, "disciple_max": 35 } },
+        { "level": 9, "lingstone": 120000, "materials": { "矿石": 300, "灵草": 150 }, "time_sec": 4800, "effect": { "clan_level": 9, "disciple_max": 40 } },
+        { "level": 10, "lingstone": 300000, "materials": { "矿石": 500, "灵草": 300 }, "time_sec": 7200, "effect": { "clan_level": 10, "disciple_max": 50 } }
+      ]
+    },
+    {
+      "id": "training_room",
+      "name": "修炼室",
+      "tier": "basic",
+      "description": "弟子挂机修炼之所，提升修炼速度",
+      "unlock": { "building": "main_hall", "level": 2 },
+      "max_level": 10,
+      "levels": [
+        { "level": 1, "lingstone": 100, "materials": {}, "time_sec": 20, "effect": { "cultivate_speed": 1.0 } },
+        { "level": 2, "lingstone": 300, "materials": {}, "time_sec": 60, "effect": { "cultivate_speed": 1.2 } },
+        { "level": 3, "lingstone": 800, "materials": { "灵草": 5 }, "time_sec": 120, "effect": { "cultivate_speed": 1.5 } },
+        { "level": 4, "lingstone": 2000, "materials": { "灵草": 10 }, "time_sec": 300, "effect": { "cultivate_speed": 1.8 } },
+        { "level": 5, "lingstone": 5000, "materials": { "灵草": 20, "矿石": 5 }, "time_sec": 600, "effect": { "cultivate_speed": 2.2 } },
+        { "level": 6, "lingstone": 12000, "materials": { "灵草": 40, "矿石": 10 }, "time_sec": 1200, "effect": { "cultivate_speed": 2.6 } },
+        { "level": 7, "lingstone": 30000, "materials": { "灵草": 80, "矿石": 20 }, "time_sec": 2400, "effect": { "cultivate_speed": 3.0 } },
+        { "level": 8, "lingstone": 70000, "materials": { "灵草": 150, "矿石": 40 }, "time_sec": 4800, "effect": { "cultivate_speed": 3.5 } },
+        { "level": 9, "lingstone": 150000, "materials": { "灵草": 300, "矿石": 80 }, "time_sec": 7200, "effect": { "cultivate_speed": 4.0 } },
+        { "level": 10, "lingstone": 350000, "materials": { "灵草": 500, "矿石": 150 }, "time_sec": 10800, "effect": { "cultivate_speed": 5.0 } }
+      ]
+    },
+    {
+      "id": "warehouse",
+      "name": "仓库",
+      "tier": "basic",
+      "description": "储备资源，提升存储上限",
+      "unlock": null,
+      "max_level": 10,
+      "levels": [
+        { "level": 1, "lingstone": 50, "materials": {}, "time_sec": 15, "effect": { "storage_limit": 1000 } },
+        { "level": 2, "lingstone": 150, "materials": {}, "time_sec": 30, "effect": { "storage_limit": 3000 } },
+        { "level": 3, "lingstone": 400, "materials": {}, "time_sec": 60, "effect": { "storage_limit": 8000 } },
+        { "level": 4, "lingstone": 1000, "materials": { "矿石": 5 }, "time_sec": 120, "effect": { "storage_limit": 20000 } },
+        { "level": 5, "lingstone": 2500, "materials": { "矿石": 10 }, "time_sec": 300, "effect": { "storage_limit": 50000 } },
+        { "level": 6, "lingstone": 6000, "materials": { "矿石": 20, "灵草": 10 }, "time_sec": 600, "effect": { "storage_limit": 120000 } },
+        { "level": 7, "lingstone": 15000, "materials": { "矿石": 40, "灵草": 20 }, "time_sec": 1200, "effect": { "storage_limit": 300000 } },
+        { "level": 8, "lingstone": 40000, "materials": { "矿石": 80, "灵草": 40 }, "time_sec": 2400, "effect": { "storage_limit": 800000 } },
+        { "level": 9, "lingstone": 100000, "materials": { "矿石": 150, "灵草": 80 }, "time_sec": 4800, "effect": { "storage_limit": 2000000 } },
+        { "level": 10, "lingstone": 250000, "materials": { "矿石": 300, "灵草": 150 }, "time_sec": 7200, "effect": { "storage_limit": 5000000 } }
+      ]
+    },
+    {
+      "id": "library",
+      "name": "藏经阁",
+      "tier": "functional",
+      "description": "收录功法秘籍，弟子可在此学习技能",
+      "unlock": { "building": "main_hall", "level": 3 },
+      "max_level": 10,
+      "levels": [
+        { "level": 1, "lingstone": 500, "materials": {}, "time_sec": 60, "effect": { "skill_slots": 1, "skill_pool": 5 } },
+        { "level": 2, "lingstone": 1200, "materials": { "功法残卷": 3 }, "time_sec": 120, "effect": { "skill_slots": 1, "skill_pool": 8 } },
+        { "level": 3, "lingstone": 3000, "materials": { "功法残卷": 5 }, "time_sec": 300, "effect": { "skill_slots": 2, "skill_pool": 12 } },
+        { "level": 4, "lingstone": 8000, "materials": { "功法残卷": 10 }, "time_sec": 600, "effect": { "skill_slots": 2, "skill_pool": 16 } },
+        { "level": 5, "lingstone": 20000, "materials": { "功法残卷": 20 }, "time_sec": 1200, "effect": { "skill_slots": 2, "skill_pool": 20 } },
+        { "level": 6, "lingstone": 50000, "materials": { "功法残卷": 40 }, "time_sec": 2400, "effect": { "skill_slots": 3, "skill_pool": 25 } },
+        { "level": 7, "lingstone": 120000, "materials": { "功法残卷": 80 }, "time_sec": 4800, "effect": { "skill_slots": 3, "skill_pool": 30 } },
+        { "level": 8, "lingstone": 300000, "materials": { "功法残卷": 150 }, "time_sec": 7200, "effect": { "skill_slots": 3, "skill_pool": 35 } },
+        { "level": 9, "lingstone": 700000, "materials": { "功法残卷": 300 }, "time_sec": 10800, "effect": { "skill_slots": 3, "skill_pool": 40 } },
+        { "level": 10, "lingstone": 1500000, "materials": { "功法残卷": 500 }, "time_sec": 14400, "effect": { "skill_slots": 3, "skill_pool": 50 } }
+      ]
+    },
+    {
+      "id": "alchemy_room",
+      "name": "炼丹房",
+      "tier": "functional",
+      "description": "炼制丹药，助力弟子突破瓶颈",
+      "unlock": { "building": "main_hall", "level": 4 },
+      "max_level": 10,
+      "levels": [
+        { "level": 1, "lingstone": 1000, "materials": {}, "time_sec": 120, "effect": { "pill_slots": 1, "pill_quality": 1 } },
+        { "level": 2, "lingstone": 2500, "materials": { "灵草": 10 }, "time_sec": 300, "effect": { "pill_slots": 1, "pill_quality": 1.2 } },
+        { "level": 3, "lingstone": 6000, "materials": { "灵草": 20 }, "time_sec": 600, "effect": { "pill_slots": 2, "pill_quality": 1.5 } },
+        { "level": 4, "lingstone": 15000, "materials": { "灵草": 40, "矿石": 10 }, "time_sec": 1200, "effect": { "pill_slots": 2, "pill_quality": 1.8 } },
+        { "level": 5, "lingstone": 40000, "materials": { "灵草": 80, "矿石": 20 }, "time_sec": 2400, "effect": { "pill_slots": 3, "pill_quality": 2.2 } },
+        { "level": 6, "lingstone": 100000, "materials": { "灵草": 150, "矿石": 40 }, "time_sec": 4800, "effect": { "pill_slots": 3, "pill_quality": 2.6 } },
+        { "level": 7, "lingstone": 250000, "materials": { "灵草": 300, "矿石": 80 }, "time_sec": 7200, "effect": { "pill_slots": 4, "pill_quality": 3.0 } },
+        { "level": 8, "lingstone": 600000, "materials": { "灵草": 500, "矿石": 150 }, "time_sec": 10800, "effect": { "pill_slots": 4, "pill_quality": 3.5 } },
+        { "level": 9, "lingstone": 1500000, "materials": { "灵草": 800, "矿石": 300 }, "time_sec": 14400, "effect": { "pill_slots": 5, "pill_quality": 4.0 } },
+        { "level": 10, "lingstone": 3000000, "materials": { "灵草": 1500, "矿石": 500 }, "time_sec": 21600, "effect": { "pill_slots": 5, "pill_quality": 5.0 } }
+      ]
+    },
+    {
+      "id": "forge",
+      "name": "铸器坊",
+      "tier": "functional",
+      "description": "锻造神兵利器，强化弟子战力",
+      "unlock": { "building": "main_hall", "level": 5 },
+      "max_level": 10,
+      "levels": [
+        { "level": 1, "lingstone": 1500, "materials": {}, "time_sec": 150, "effect": { "forge_slots": 1, "forge_quality": 1 } },
+        { "level": 2, "lingstone": 3500, "materials": { "矿石": 10 }, "time_sec": 300, "effect": { "forge_slots": 1, "forge_quality": 1.2 } },
+        { "level": 3, "lingstone": 8000, "materials": { "矿石": 20 }, "time_sec": 600, "effect": { "forge_slots": 2, "forge_quality": 1.5 } },
+        { "level": 4, "lingstone": 20000, "materials": { "矿石": 40, "灵草": 10 }, "time_sec": 1200, "effect": { "forge_slots": 2, "forge_quality": 1.8 } },
+        { "level": 5, "lingstone": 50000, "materials": { "矿石": 80, "灵草": 20 }, "time_sec": 2400, "effect": { "forge_slots": 3, "forge_quality": 2.2 } },
+        { "level": 6, "lingstone": 120000, "materials": { "矿石": 150, "灵草": 40 }, "time_sec": 4800, "effect": { "forge_slots": 3, "forge_quality": 2.6 } },
+        { "level": 7, "lingstone": 300000, "materials": { "矿石": 300, "灵草": 80 }, "time_sec": 7200, "effect": { "forge_slots": 4, "forge_quality": 3.0 } },
+        { "level": 8, "lingstone": 700000, "materials": { "矿石": 500, "灵草": 150 }, "time_sec": 10800, "effect": { "forge_slots": 4, "forge_quality": 3.5 } },
+        { "level": 9, "lingstone": 1600000, "materials": { "矿石": 800, "灵草": 300 }, "time_sec": 14400, "effect": { "forge_slots": 5, "forge_quality": 4.0 } },
+        { "level": 10, "lingstone": 3500000, "materials": { "矿石": 1500, "灵草": 500 }, "time_sec": 21600, "effect": { "forge_slots": 5, "forge_quality": 5.0 } }
+      ]
+    },
+    {
+      "id": "guard_array",
+      "name": "护山大阵",
+      "tier": "advanced",
+      "description": "宗门防御阵法，抵御外敌入侵",
+      "unlock": { "building": "main_hall", "level": 6 },
+      "max_level": 10,
+      "levels": [
+        { "level": 1, "lingstone": 5000, "materials": { "矿石": 20, "功法残卷": 5 }, "time_sec": 600, "effect": { "defense": 50 } },
+        { "level": 2, "lingstone": 12000, "materials": { "矿石": 40, "功法残卷": 10 }, "time_sec": 1200, "effect": { "defense": 120 } },
+        { "level": 3, "lingstone": 30000, "materials": { "矿石": 80, "功法残卷": 20 }, "time_sec": 2400, "effect": { "defense": 250 } },
+        { "level": 4, "lingstone": 80000, "materials": { "矿石": 150, "功法残卷": 40 }, "time_sec": 4800, "effect": { "defense": 500 } },
+        { "level": 5, "lingstone": 200000, "materials": { "矿石": 300, "功法残卷": 80 }, "time_sec": 7200, "effect": { "defense": 1000 } },
+        { "level": 6, "lingstone": 500000, "materials": { "矿石": 500, "功法残卷": 150 }, "time_sec": 10800, "effect": { "defense": 2000 } },
+        { "level": 7, "lingstone": 1200000, "materials": { "矿石": 800, "功法残卷": 300 }, "time_sec": 14400, "effect": { "defense": 4000 } },
+        { "level": 8, "lingstone": 3000000, "materials": { "矿石": 1500, "功法残卷": 500 }, "time_sec": 21600, "effect": { "defense": 8000 } },
+        { "level": 9, "lingstone": 7000000, "materials": { "矿石": 3000, "功法残卷": 1000 }, "time_sec": 28800, "effect": { "defense": 15000 } },
+        { "level": 10, "lingstone": 15000000, "materials": { "矿石": 5000, "功法残卷": 2000 }, "time_sec": 43200, "effect": { "defense": 30000 } }
+      ]
+    },
+    {
+      "id": "arena",
+      "name": "演武场",
+      "tier": "advanced",
+      "description": "弟子切磋较技，提升实战能力",
+      "unlock": { "building": "main_hall", "level": 7 },
+      "max_level": 10,
+      "levels": [
+        { "level": 1, "lingstone": 8000, "materials": { "矿石": 30, "灵草": 10 }, "time_sec": 900, "effect": { "combat_bonus": 1.05 } },
+        { "level": 2, "lingstone": 20000, "materials": { "矿石": 60, "灵草": 20 }, "time_sec": 1800, "effect": { "combat_bonus": 1.10 } },
+        { "level": 3, "lingstone": 50000, "materials": { "矿石": 120, "灵草": 40 }, "time_sec": 3600, "effect": { "combat_bonus": 1.15 } },
+        { "level": 4, "lingstone": 120000, "materials": { "矿石": 250, "灵草": 80 }, "time_sec": 7200, "effect": { "combat_bonus": 1.20 } },
+        { "level": 5, "lingstone": 300000, "materials": { "矿石": 500, "灵草": 150 }, "time_sec": 10800, "effect": { "combat_bonus": 1.25 } },
+        { "level": 6, "lingstone": 800000, "materials": { "矿石": 1000, "灵草": 300 }, "time_sec": 14400, "effect": { "combat_bonus": 1.30 } },
+        { "level": 7, "lingstone": 2000000, "materials": { "矿石": 2000, "灵草": 600 }, "time_sec": 21600, "effect": { "combat_bonus": 1.35 } },
+        { "level": 8, "lingstone": 5000000, "materials": { "矿石": 4000, "灵草": 1200 }, "time_sec": 28800, "effect": { "combat_bonus": 1.40 } },
+        { "level": 9, "lingstone": 10000000, "materials": { "矿石": 8000, "灵草": 2500 }, "time_sec": 43200, "effect": { "combat_bonus": 1.45 } },
+        { "level": 10, "lingstone": 20000000, "materials": { "矿石": 15000, "灵草": 5000 }, "time_sec": 86400, "effect": { "combat_bonus": 1.50 } }
+      ]
+    }
+  ]
+}

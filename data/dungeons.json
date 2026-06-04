@@ -1,0 +1,58 @@
+{
+  "dungeons": [
+    {
+      "id": "dun_forest",
+      "name": "迷雾森林",
+      "unlock_level": 1,
+      "node_count": [5, 8],
+      "difficulty": 1,
+      "description": "宗门附近的古老森林，常有低阶妖兽出没，适合新入门弟子历练。",
+      "enemies": [
+        { "name": "石魔", "hp": 50, "atk": 8, "def": 3, "reward_lingstone": [30, 60], "reward_material": [] },
+        { "name": "风狼", "hp": 40, "atk": 10, "def": 2, "reward_lingstone": [25, 50], "reward_material": [] },
+        { "name": "毒蛇", "hp": 35, "atk": 12, "def": 1, "reward_lingstone": [20, 45], "reward_material": ["灵草"] }
+      ],
+      "boss": { "name": "树妖王", "hp": 150, "atk": 15, "def": 5, "reward_lingstone": [200, 500], "reward_material": ["矿石", "灵草", "功法残卷"] },
+      "events": [
+        { "text": "林间小径上发现了一株发光灵草，是否采摘？", "options": [{ "text": "采摘", "effect": { "灵草": [2, 5] } }, { "text": "绕路", "effect": {} }] },
+        { "text": "前方传来野兽的嘶吼声，一条岔路出现在眼前。", "options": [{ "text": "循声而去", "effect": { "battle": "风狼" } }, { "text": "另寻他路", "effect": {} }] }
+      ]
+    },
+    {
+      "id": "dun_ruins",
+      "name": "古城遗迹",
+      "unlock_level": 3,
+      "node_count": [8, 12],
+      "difficulty": 2,
+      "description": "一座被黄沙掩埋的古城，传闻有上古修士的洞府隐藏其中。",
+      "enemies": [
+        { "name": "沙蝎", "hp": 100, "atk": 18, "def": 6, "reward_lingstone": [80, 150], "reward_material": ["矿石"] },
+        { "name": "骷髅兵", "hp": 120, "atk": 15, "def": 8, "reward_lingstone": [70, 140], "reward_material": [] },
+        { "name": "怨灵", "hp": 80, "atk": 22, "def": 3, "reward_lingstone": [90, 160], "reward_material": ["功法残卷"] }
+      ],
+      "boss": { "name": "古城守护者", "hp": 400, "atk": 28, "def": 12, "reward_lingstone": [800, 2000], "reward_material": ["矿石", "功法残卷", "灵草"] },
+      "events": [
+        { "text": "墙壁上刻着古老的文字，似乎记载着某种功法。", "options": [{ "text": "拓印下来", "effect": { "功法残卷": [1, 3] } }, { "text": "继续前行", "effect": {} }] },
+        { "text": "一扇沉重的石门挡住了去路，门上有机关。", "options": [{ "text": "尝试破解机关", "effect": { "random": true } }, { "text": "寻找其他入口", "effect": {} }] }
+      ]
+    },
+    {
+      "id": "dun_volcano",
+      "name": "熔岩地窟",
+      "unlock_level": 5,
+      "node_count": [10, 15],
+      "difficulty": 3,
+      "description": "火山深处的熔岩洞穴，据说有火属性珍稀矿石，但也栖息着强大的火系妖兽。",
+      "enemies": [
+        { "name": "熔岩怪", "hp": 200, "atk": 30, "def": 10, "reward_lingstone": [200, 400], "reward_material": ["矿石"] },
+        { "name": "火蝠", "hp": 150, "atk": 35, "def": 6, "reward_lingstone": [180, 350], "reward_material": ["灵草"] },
+        { "name": "炎魔", "hp": 250, "atk": 28, "def": 15, "reward_lingstone": [250, 500], "reward_material": ["矿石", "灵草"] }
+      ],
+      "boss": { "name": "熔岩巨兽", "hp": 800, "atk": 45, "def": 20, "reward_lingstone": [3000, 8000], "reward_material": ["矿石", "功法残卷", "灵草"] },
+      "events": [
+        { "text": "岩浆池中浮现出一块发光的矿石。", "options": [{ "text": "冒险捞取", "effect": { "矿石": [5, 15] } }, { "text": "太危险了", "effect": {} }] },
+        { "text": "洞穴深处传来痛苦的哀嚎声。", "options": [{ "text": "前往查看", "effect": { "battle": "炎魔" } }, { "text": "悄悄离开", "effect": {} }] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "events": [
+    {
+      "id": "evt_meteor",
+      "type": "fortune",
+      "title": "天降陨铁",
+      "text": "夜观天象，一颗陨星坠落于宗门后山，散发出奇异光芒。弟子们前往查看，发现其中蕴含珍稀矿石！",
+      "effect": { "resources": { "矿石": [20, 50] } }
+    },
+    {
+      "id": "evt_immortal",
+      "type": "fortune",
+      "title": "仙人路过",
+      "text": "一位云游仙人途经宗门，见宗门气象不凡，留下了一卷功法残篇和几句指点。",
+      "effect": { "resources": { "功法残卷": [2, 5] }, "lingstone": [500, 1500] }
+    },
+    {
+      "id": "evt_spring",
+      "type": "fortune",
+      "title": "灵泉喷涌",
+      "text": "宗门后山的灵泉突然喷涌，灵气浓度大幅提升。所有修炼中的弟子获得了额外的修为！",
+      "effect": { "cultivate_boost": 3600 }
+    },
+    {
+      "id": "evt_beast_attack",
+      "type": "crisis",
+      "title": "妖兽来袭",
+      "text": "一群妖兽从附近山脉冲出，直奔宗门而来！需要立即组织弟子迎战。",
+      "effect": { "battle": { "enemy": "wild_beasts", "penalty": { "lingstone": [-200, -500] }, "reward": { "矿石": [10, 30] } } }
+    },
+    {
+      "id": "evt_deviation",
+      "type": "crisis",
+      "title": "走火入魔",
+      "text": "一位弟子修炼时心境不稳，真气逆行，陷入了走火入魔的状态。需要消耗灵草为其调理经脉。",
+      "effect": { "disciple_hurt": true, "cost": { "灵草": [5, 15] } }
+    },
+    {
+      "id": "evt_tribulation",
+      "type": "crisis",
+      "title": "天劫预警",
+      "text": "天象异变，雷云聚集。宗门中修为最高的弟子感应到了天劫将至的气息，需要提前做好准备。",
+      "effect": { "disciple_warn": true }
+    },
+    {
+      "id": "evt_rogue",
+      "type": "choice",
+      "title": "散修求收留",
+      "text": "一位流浪散修来到宗门，自称得罪了大势力，请求在宗门暂避风头。收留他可能引来麻烦，但也可能获得一位得力帮手。",
+      "options": [
+        { "text": "收留他", "effect": { "disciple_random": true, "lingstone": [-100, -300], "risk_event": "evt_enemy_visit" } },
+        { "text": "婉拒", "effect": { "lingstone": [100, 200] } }
+      ]
+    },
+    {
+      "id": "evt_dispute",
+      "type": "choice",
+      "title": "宗门纠纷",
+      "text": "附近两个小宗门因灵脉开采权起了争执，双方都派人来请求宗门主持公道。你的决定将影响宗门声望。",
+      "options": [
+        { "text": "主持公道，公平裁决", "effect": { "reputation": 50, "lingstone": [500, 1000] } },
+        { "text": "趁火打劫，收取调解费", "effect": { "lingstone": [2000, 5000], "reputation": -20 } },
+        { "text": "置之不理", "effect": {} }
+      ]
+    },
+    {
+      "id": "evt_trade",
+      "type": "choice",
+      "title": "神秘商人",
+      "text": "一位神秘商人出现在宗门门口，他手中有些稀有的材料，但价格不菲。",
+      "options": [
+        { "text": "购买稀有矿石（500灵石）", "effect": { "lingstone": -500, "resources": { "矿石": [30, 50] } } },
+        { "text": "购买灵草种子（300灵石）", "effect": { "lingstone": -300, "resources": { "灵草": [20, 40] } } },
+        { "text": "不买", "effect": {} }
+      ]
+    },
+    {
+      "id": "evt_mischief",
+      "type": "anecdote",
+      "title": "弟子闯祸",
+      "text": "一位弟子偷偷溜进炼丹房，私自炼制了一炉丹药，结果把炼丹房炸得一片狼藉。不过，他似乎意外炼出了一颗品质不错的丹药。",
+      "effect": { "lingstone": [-100, -200], "resources": { "灵草": [1, 3] } }
+    },
+    {
+      "id": "evt_gossip",
+      "type": "anecdote",
+      "title": "宗门八卦",
+      "text": "弟子们私下议论纷纷，据说藏经阁深处藏着一本上古功法，但从来没有人找到过。这件事在宗门里掀起了不小的波澜。",
+      "effect": { "disciple_loyalty": [1, 3] }
+    },
+    {
+      "id": "evt_oddity",
+      "type": "anecdote",
+      "title": "奇人异事",
+      "text": "一位自称"天下第一算命师"的老者来到宗门，非要给宗主算一卦才肯离开。弟子们哭笑不得，围观者甚众。",
+      "effect": { "lingstone": [-50, -50], "random_buff": true }
+    }
+  ]
+}

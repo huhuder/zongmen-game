@@ -1,0 +1,26 @@
+{
+  "names": {
+    "surnames": ["云", "叶", "林", "苏", "沐", "萧", "柳", "白", "沈", "慕容", "上官", "司徒", "皇甫", "欧阳", "独孤", "南宫", "东方", "百里", "西门", "北冥", "凌", "秦", "楚", "魏", "韩", "赵", "齐", "燕", "姬", "姜"],
+    "given_names": ["天", "无涯", "清扬", "子轩", "逸风", "寒月", "星辰", "若雪", "云鹤", "凌霄", "青玄", "紫烟", "苍", "破军", "无忌", "雪见", "长卿", "逍遥", "灵儿", "月如", "景天", "重楼", "飞蓬", "龙葵", "紫萱", "花楹", "天河", "菱纱", "梦璃", "玄霄"]
+  },
+  "qualities": [
+    { "id": "common", "name": "凡品", "color": "#9e9e9e", "weight": 60, "max_realm": "yuanying", "talent_min": 0, "talent_max": 1 },
+    { "id": "rare", "name": "灵品", "color": "#4caf50", "weight": 25, "max_realm": "huashen", "talent_min": 1, "talent_max": 2 },
+    { "id": "epic", "name": "仙品", "color": "#9c27b0", "weight": 12, "max_realm": "heti", "talent_min": 2, "talent_max": 3 },
+    { "id": "legendary", "name": "神品", "color": "#ff9800", "weight": 3, "max_realm": "zhenxian", "talent_min": 3, "talent_max": 4 }
+  ],
+  "talents": [
+    { "id": "sword_genius", "name": "剑道天才", "type": "combat", "desc": "剑法伤害+15%", "effect": { "atk_bonus": 0.15 } },
+    { "id": "divine_strength", "name": "天生神力", "type": "combat", "desc": "攻击力+10%", "effect": { "atk_bonus": 0.10 } },
+    { "id": "iron_body", "name": "钢筋铁骨", "type": "combat", "desc": "防御力+15%", "effect": { "def_bonus": 0.15 } },
+    { "id": "blood_boil", "name": "热血沸腾", "type": "combat", "desc": "气血上限+20%", "effect": { "hp_bonus": 0.20 } },
+    { "id": "enlightenment", "name": "悟性超群", "type": "cultivate", "desc": "修炼速度+20%", "effect": { "cultivate_bonus": 0.20 } },
+    { "id": "alchemy_talent", "name": "丹道奇才", "type": "cultivate", "desc": "突破成功率+15%", "effect": { "breakthrough_bonus": 0.15 } },
+    { "id": "lucky_charm", "name": "鸿运当头", "type": "special", "desc": "探索掉率+5%", "effect": { "drop_bonus": 0.05 } },
+    { "id": "array_master", "name": "阵法精通", "type": "special", "desc": "护山大阵效果+15%", "effect": { "array_bonus": 0.15 } },
+    { "id": "quick_learner", "name": "过目不忘", "type": "cultivate", "desc": "功法学习速度+30%", "effect": { "learn_bonus": 0.30 } },
+    { "id": "crit_master", "name": "会心一击", "type": "combat", "desc": "暴击率+10%", "effect": { "crit_bonus": 0.10 } },
+    { "id": "healer", "name": "回春妙手", "type": "special", "desc": "战后自动回复10%气血", "effect": { "heal_bonus": 0.10 } },
+    { "id": "sixth_sense", "name": "未卜先知", "type": "special", "desc": "秘境中发现隐藏节点概率+20%", "effect": { "hidden_bonus": 0.20 } }
+  ]
+}
